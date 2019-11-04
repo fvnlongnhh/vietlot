@@ -3,12 +3,23 @@
 .box_pc {display: block;}
 
 @media screen and (min-width: 751px) {
-    #footer .foot_r .social a:hover{opacity: 0.7;cursor: pointer}
+    .btn a:hover{background: #fff;color:#073265;}
+    
+    .slick-arrow:hover::before{cursor: pointer;opacity: 0.8;}
+    .slick-slider:hover .slick-arrow{transform: translateY(0);opacity: 1;}
 
-    #footer .foot_r .social a.line:hover{opacity: 1;}
+    
+    .box01_ct ul li:hover{box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15), 0px 4px 7px 0px rgba(0, 0, 0, 0.15)}
+    .box01_ct ul li:hover span{color: #26408e}
+
+    .box02_btn .qr:hover{transform: none;box-shadow: none;}
+    .box02_btn p:hover{transform: translateY(-10px);box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15), 0px 4px 7px 0px rgba(0, 0, 0, 0.15)}
+    
+    #btn_top:hover,
+    .box04_ct ul li a:hover{opacity: 0.7;}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     h1,
     h2,
     h3,
@@ -41,8 +52,9 @@
     .box_sp {display: block;}
     .box_pc {display: none;}
     /*---*/
-
-
+    
+    .slick-arrow{width: 30px;height: 30px;top: calc(50% - 15px);transform: translateY(0);opacity: 1;}
+    .slick-arrow::before{width: 30px;height: 30px;}
     /*==========================================================================*/
     /*                               ALL                                        */
     /*==========================================================================*/

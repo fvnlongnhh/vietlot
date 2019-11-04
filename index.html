@@ -9,38 +9,144 @@
 <meta name="description" content="">
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<link rel="stylesheet" href="./css/slick.css"/>
 <link rel="stylesheet" href="./css/aos.css"/>
+<link rel="stylesheet" href="./css/lightbox.css"/>
+<link rel="stylesheet" href="./css/slick.css"/>
 <link rel="stylesheet" href="./css/styles.css"/>
 <link rel="stylesheet" href="./css/responsive.css"/>
 <script src="./js/jquery.js"></script>
-<script src="./js/slick.min.js"></script>
+
 </head>
 
 <body id="index">
 <div id="wrapper">
-    <div id="header" class="clearfix">
-        <h1 id="logo"><a href="#"><img src="./images/logo.png" alt=""></a></h1>
-        <!-- GNAVI  -->
+    <div id="header">
         <div id="gnavi" class="clearfix box_pc">
-            <div id="gnavi_ct">
-                <div class="inner clearfix">
-                    <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#function">Tính năng</a></li>
-                        <li><a href="#rate">Đánh giá</a></li>
-                        <li><a href="#coop">Hợp tác</a></li>
-                        <li><a href="#contact">Liên hệ</a></li>
-                        <li class="btn"><a href="./online.html">Trực Tuyến</a></li>
-                        <li class="btn"><a href="./page/">Mua Ngay</a></li>
-                    </ul>
-                </div>
+            <div class="inner clearfix">
+                <h1 id="logo"><a href="#"><img src="./images/logo.png" alt=""></a></h1>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#function">Tính năng</a></li>
+                    <li><a href="#rate">Đánh giá</a></li>
+                    <li><a href="#coop">Hợp tác</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <li class="btn"><a href="./online.html">Trực Tuyến</a></li>
+                    <li class="btn"><a href="./page/">Mua Ngay</a></li>
+                </ul>
             </div>
         </div>  
+    </div>
+
+    <div id="slider">
+        <div class="slide_list">
+            <ul>
+                <li><img src="./images/slide_1.jpg" alt=""></li>
+                <li><img src="./images/slide_3.jpg" alt=""></li>
+            </ul>
+        </div>
     </div>
     
     <!-- main start -->
     <div id="main" class="clearfix">
+        <div id="function" class="box01">
+            <div class="inner">
+                <div class="box01_ct">
+                    <div class="ttl">
+                        <h3>Tính năng nổi bật</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio aperiam aspernatur, explicabo dolore ullam consequatur, error ipsum consectetur aliquid quisquam, praesentium placeat! Quae laboriosam unde, cupiditate ratione dolor impedit.</p>
+                    </div>
+
+                    <ul>
+                        <li><img src="./images/box01_ic_1.png"><span>Giải thưởng lớn<br>mỗi ngày</span></li>
+                        <li><img src="./images/box01_ic_2.png"><span>Đặt mua vietlott<br>mọi lúc mọi nơi</span></li>
+                        <li><img src="./images/box01_ic_3.png"><span>Tự động thông báo<br>trúng thưởng</span></li>
+                        <li><img src="./images/box01_ic_4.png"><span>Trao giải trúng thưởng<br>tận nhà</span></li>
+                        <li><img src="./images/box01_ic_5.png"><span>Hỗ trợ online<br>24/24</span></li>
+                        <li><img src="./images/box01_ic_6.png"><span>Sớm triển khai ship vé<br>tại 40 tỉnh thành</span></li>
+                        <li><img src="./images/box01_ic_7.png"><span>Thông tin khách hàng<br>in mặt sau vé</span></li>
+                        <li><img src="./images/box01_ic_8.png"><span>Bảo mật thông tin,<br>yên tâm lĩnh thưởng</span></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="box02">
+            <div class="inner">
+                <div class="box02_ct">
+                    <div class="ttl">
+                        <h3>Tải ứng dụng</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eaque quibusdam sit earum tenetur, maiores aut cupiditate dolore animi rem, deserunt quia id numquam porro necessitatibus tempora, expedita quis suscipit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad cumque esse fugit consequuntur optio aspernatur odio, beatae nisi assumenda. Aliquid optio maiores unde, vero quod delectus atque, at quia.</p>
+                    </div>
+                
+                    <div class="box02_btn">
+                        <p class="qr"><img src="./images/qrcode.png" width="180" alt="QRcode"></p>
+                        <p><a href="#"><img src="./images/google_play.png" alt="Google Play" width="200"></a></p>
+                        <p><a href="#"><img src="./images/app_store.png" alt="App Store" width="200"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box03">
+            <div class="inner">
+                <div class="box03_ct">
+                    <div class="ttl">
+                        <h3>Video Hướng dẫn</h3>
+                    </div>
+
+                    <div class="box03_list">
+                        <ul>
+                            <li>
+                                <p>Hướng dẫn sử dụng</p>
+                                <div class="box03_video">
+                                    <iframe src="https://www.youtube.com/embed/l6-TssVSD4o"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </li>
+
+                            <li>
+                                <p>Hướng dẫn nạp tiền</p>
+                                <div class="box03_video">
+                                    <iframe src="https://www.youtube.com/embed/l6-TssVSD4o"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </li>
+
+                            <li>
+                                <p>Cách chơi Max 4D</p>
+                                <div class="box03_video">
+                                    <iframe src="https://www.youtube.com/embed/l6-TssVSD4o"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box04">
+            <div class="inner">
+                <div class="box04_ct">
+                    <div class="ttl">
+                        <h3>Hình ảnh ứng dụng</h3>
+                    </div>
+                    <div class="box04_img">
+                        <ul>
+                            <li><a href="./images/box03_img_1.jpg" data-lightbox="big"><img src="./images/box03_img_1.jpg" alt=""></a></li>
+                            <li><a href="./images/box03_img_2.jpg" data-lightbox="big"><img src="./images/box03_img_2.jpg" alt=""></a></li>
+                            <li><a href="./images/box03_img_3.jpg" data-lightbox="big"><img src="./images/box03_img_3.jpg" alt=""></a></li>
+                            <li><a href="./images/box03_img_4.jpg" data-lightbox="big"><img src="./images/box03_img_4.jpg" alt=""></a></li>
+                            <li><a href="./images/box03_img_5.jpg" data-lightbox="big"><img src="./images/box03_img_5.jpg" alt=""></a></li>
+                            <li><a href="./images/box03_img_6.jpg" data-lightbox="big"><img src="./images/box03_img_6.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <p class="btn"><a href="#">Đặt mua ngay</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- .box02>.inner>.box02_ct>.ttl>h3+p -->
     </div>
     
     <!-- main end -->
@@ -51,6 +157,8 @@
 </div>
 
 <script src="./js/aos.js"></script> 
+<script src="./js/slick.min.js"></script>
 <script src="./js/vietlot.js"></script> 
+<script src="./js/lightbox.js"></script> 
 </body>
 </html>
