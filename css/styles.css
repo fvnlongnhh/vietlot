@@ -28,11 +28,14 @@ img {vertical-align: middle;max-width: 100%;}
 table {width: 100%;font-size:inherit; font: 100%; color: #333; line-height: 1.4; }
 p {margin: 0 0 1.5em;}
 div > p:last-child{margin-bottom: 0}
+input,
+select{height: 50px;border:1px solid #999;padding: 5px 10px;font-size: 14px;background: #fff;border-radius: 5px;}
 /*==========================================================================*/
 /*                            Container                                     */
 /*==========================================================================*/
 html {background: none;}
 body {color: #333;font-family: 'Roboto Condensed', sans-serif;font-size: 14px;}
+body.active{overflow: hidden}
 #wrapper{min-width:1280px;overflow: hidden}
 .inner {width:1200px;margin: 0 auto;}
 a{text-decoration: none;color: #333;}
@@ -57,7 +60,7 @@ td{line-height: 1.75em}
 #gnavi ul{display: flex;justify-content: space-between;width: calc(100% - 150px);padding-left: 20px;align-items: center;}
 #gnavi ul li{margin: 0 0 0 15px;}
 #gnavi ul li a{text-transform: uppercase;color: #fff;}
-#gnavi ul li.btn a{text-transform: uppercase;width: auto;padding: 0 50px;border-radius: 30px;}
+#gnavi ul li.btn a{text-transform: uppercase;width: auto;padding: 0 50px;border-radius: 30px;margin-bottom: 0}
 #gnavi ul li a:hover{opacity: 0.7;}
 
 .btn_open{width: 60px;height:60px;margin: 0;position: absolute;top: 0px;right: 0;}
@@ -104,9 +107,6 @@ td{line-height: 1.75em}
 /*==========================================================================*/
 /*                               ALL                                        */
 /*==========================================================================*/
-/* FONT PAGE  */
-
-
 /* FIX FONT + PADDING */
 .pdb30{padding: 0 0 30px}
 .pdb50{padding: 0 0 50px;}
@@ -117,8 +117,12 @@ td{line-height: 1.75em}
 .fs16{font-size: 16px;}
 
 .btn{text-align: center;display: block;margin:0 auto;}
-.btn a{position: relative;text-align: center;color: #fff;width: 260px;height: 50px;background: #1b3a8e;font-size: 16px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto;box-sizing: border-box;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase}
-
+.btn a{position: relative;text-align: center;color: #fff;width: 260px;height: 50px;background: #1b3a8e;font-size: 16px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase}
+.btn:last-child a{margin-bottom: 0}
+.btn a span{font-weight: bold}
+.btn a img{}
+.btn_red a{background: #e30922;border-color: #e30922}
+.btn_white a{background: #fff;border-color: #323232;color: #323232}
 
 /* SLICK ARROW */
 .slick-arrow{width: 40px;height: 40px;position: absolute;top: calc(50% - 20px);left: 15px;z-index: 1;background: none;border: none;transform: translateY(-20px);opacity: 0;transition: all ease-in-out 0.4s}
@@ -179,7 +183,6 @@ td{line-height: 1.75em}
 .box05_ct .box05_list ul li .img{width: 80px;height: 80px;border-radius: 50%;overflow: hidden;display: flex;justify-content: center;align-items: center;text-align: center;}
 .box05_ct .box05_list ul li  .talk{color: #8492a6;font-size: 14px;text-align: center;}
 .box05_ct .box05_list ul li  .name{color: #4da2f9}
-
 .box05_ct .box05_list .slick-dots{display: flex;justify-content: center;margin-top: 30px;}
 .box05_ct .box05_list .slick-dots li{width: 10px;height: 10px;border:none;box-shadow: none;background: none;border-radius: 0;margin: 0 5px;padding: 0}
 .box05_ct .box05_list .slick-dots li.slick-active{transform: rotate(45deg)}
@@ -193,7 +196,6 @@ td{line-height: 1.75em}
 .box06_ct ul li .img{}
 .box06_ct ul li .num{color: #4da2f9;font-size: 60px;font-weight: 700;margin: 15px auto}
 
-
 .box07{background: #fefaee url('../images/box07_bg.jpg') center right no-repeat;padding: 100px 0}
 .box07_ct{width: 50%;}
 
@@ -204,7 +206,7 @@ td{line-height: 1.75em}
 .box08_ct ul li.slick-slide{width: 100px;height: 100px;border-radius: 5px;display: flex;align-items: center;justify-content: center;overflow: hidden;text-align: center;margin: 0 15px;}
 .box08_ct ul li img{max-height: 100%;}
 .box08_ct .slick-dots{display: flex;justify-content: center;margin-top: 30px;}
-.box08_ct .slick-dots li{width: 10px;height: 10px;border:none;box-shadow: none;background: none;border-radius: 0;margin: 0 5px;padding: 0}
+.box08_ct .slick-dots li{width:10px;height: 10px;border:none;box-shadow: none;background: none;border-radius: 0;margin: 0 5px;padding: 0}
 .box08_ct .slick-dots li.slick-active button{transform: rotate(45deg)}
 .box08_ct .slick-dots li button{border-radius: 2px;background: #4da2f9;width: 100%;height: 100%;border:none;font-size: 0;color: transparent;}
 
@@ -231,38 +233,97 @@ td{line-height: 1.75em}
 
 #footer address{text-align: center;padding:0;font-size: 12px;width: 100%;height: 50px;color: #fff;display: flex;align-items: center;justify-content: center;letter-spacing: 0.05em;background: #4da2f9}
 
+/*==========================================================================*/
+/*                               CHILD PAGE                                 */
+/*==========================================================================*/
 
-/* PAGE CHILD */
-.game_pages{background: #f1f3f5}
-.game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;background: #4da2f9;position: relative;}
-.game_pages .inner{width: 100%;padding: 0 15px;}
+/* ALL GAME PAGE */
+.game_pages{background: #fff}
+.game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;background: #f1f3f5;position: relative;padding-bottom: 50px;min-height: 100vh;}
+.game_pages .container{width: 100%;padding: 0 15px;}
+.game_pages #header{height:100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center}
+.game_pages #logo{width: 100px;text-align: center;margin:0 auto;}
+.game_pages #main{margin-top: 30px}
+.game_pages p{margin-bottom: 0;font-size: 16px;}
+.game_pages input{width: 100%;}
+.game_pages input::placeholder{color: #ccc}
 
-.game_pages #header{position: absolute;top: 0;left: 0;width: 100px;z-index: 3;}
-.game_pages .read{text-align: center;font-size: 14px}
-.game_pages .read a{color: #fff}
+/* CONTROL BUTTON */
+.control_ct{margin-top: 30px}
+.control_ct .btn{}
+.control_ct .btn a{}
+.control_ct .btn_red a{}
+
+/* =========== GAME MAIN PAGE =========== */
+#games{background: #f1f3f5}
+#games #wrapper{background: #4da2f9}
+#games #header{position: absolute;top: 15px;left: 15px;z-index: 3;background: none;height: auto;}
+#games .read{text-align: center;font-size: 14px;margin-top: 15px}
+#games .read a{color: #fff}
 
 .games_ct{margin-top: 15px;}
-.games_ct .inner{width: 100%;}
-.games_ct .games_item{background: #fff;border-radius: 5px;margin-bottom: 15px;display: flex;align-content: center;position: relative;}
-.games_ct .games_item p{margin-bottom: 0}
-.games_ct .games_item .img{width: 80px;}
-.games_ct .games_item .txt{width: calc(100% - 160px);display: flex;align-items: center;}
+.games_ct .container{width: 100%;}
+.games_ct .games_item{background: #fff;border-radius: 5px;margin-bottom: 15px;display: flex;align-content: center;position: relative;height: 80px;padding-left: 10px}
+.games_ct .games_item p{margin-bottom: 0;line-height: 1.3em}
+.games_ct .games_item .img{width: 80px;height: 80px;display: flex;align-items: center;text-align: center;justify-content: center;margin-right: 20px}
+.games_ct .games_item .txt{width: calc(100% - 100px);display: flex;flex-direction: column;justify-content: center}
 .games_ct .games_item .txt p{}
 .games_ct .games_item .big{text-transform: capitalize;}
-.games_ct .games_item .date{font-size: 12px;}
-.games_ct .games_item .date span{display: inline-block;}
 .games_ct .games_item .money{font-weight: bold;}
-.games_ct .games_item .time{font-size: 12px;}
-.games_ct .games_item .time span{display: inline-block}
-.games_ct .games_item .arr{position: absolute;top: 5px;right: 5px;width: 50px;height: calc(100% - 10px);border-radius: 0 5px 5px 0;background: #073265;display: flex;align-items: center;justify-content: center;text-align: center;}
-.games_ct .games_item .arr a{}
+.games_ct .games_item .date,
+.games_ct .games_item .time{font-size: 14px}
+.games_ct .games_item .date span,
+.games_ct .games_item .time span{font-weight: bold;margin-left: 5px}
+.games_ct .games_item .bold{font-weight: bold}
+.games_ct .games_item .arr{position: absolute;top: 5px;right: 5px;width: 50px;height: calc(100% - 10px);border-radius: 0 5px 5px 0;background: #ffc000;display: flex;align-items: center;justify-content: center;text-align: center;}
+.games_ct .games_item .arr a{line-height: 0}
 
-/* BOX TERM OF USE */
-.btn_term{color: #}
+.games_ct .games_item.keno .money{color: #cf5f3a}
+.games_ct .games_item.keno .arr{background: #cf5f3a}
+.games_ct .games_item.om3d .money{color: #ea6a28}
+.games_ct .games_item.om3d .arr{background: #ea6a28}
+.games_ct .games_item.power .money{color: #e30922}
+.games_ct .games_item.power .arr{background: #e30922}
+.games_ct .games_item.mega645 .money{color: #2164b2}
+.games_ct .games_item.mega645 .arr{background: #2164b2}
+.games_ct .games_item.max3dp .money{color: #39ae41}
+.games_ct .games_item.max3dp .arr{background: #39ae41}
+.games_ct .games_item.max4d .money{color: #81005d}
+.games_ct .games_item.max4d .arr{background: #81005d}
+.games_ct .games_item.max3d .money{color: #b21a8f}
+.games_ct .games_item.max3d .arr{background: #b21a8f}
 
-.box_term{position: fixed;top: 0;left: 0;width: 100vw;height: 100vh;z-index: 9;display: none}
-.box_term_bg{background: rgba(0, 0, 0, 1.0);}
+/* BOX MODAL POPUP */
+.btn_modal{cursor: pointer}
+.box_modal{position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 9;opacity: 0;transform: scale(0);transition: all ease 0.3s}
+.box_modal.active{transform: scale(1);opacity: 1;}
+.box_modal_bg{background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 0;}
+.box_modal .btn_close{position: absolute;top: 15px;right: 15px;line-height: 0}
+.box_modal_ct{background: #fff;width: 90%;height: 90%;top: 5%;left: 5%;position: absolute;z-index: 1;padding-bottom: 15px}
+.box_modal_head{width: 100%;height: 100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;position: relative;text-transform: uppercase;}
+.box_modal_head h3{font-size: 24px}
+.box_modal_body{max-height: 70%;overflow: auto;padding: 20px;margin-bottom: 10px}
+.box_modal_foot{}
+
+/* =========== LOGIN PAGE =========== */
+#login{}
+.login_ct{}
+.login_ct p{margin-bottom: 5px}
+
+/* BOX TERM */
+.box_term{}
 .box_term_ct{}
+.box_term_ct p{margin-bottom: 15px}
+
+/* BOX CONFIRM */
+.confirm_ct{}
+.confirm_ct p{margin-bottom: 15px}
+.confirm_tel{display: flex;justify-content: center;}
+.confirm_tel select{width: 100px;cursor: pointer;font-size: 14px}
+.confirm_tel input{width: 65%;margin-left: 2%}
+.confirm_txt{margin-top: 15px;}
+.confirm_txt p{font-size: 12px;}
+.confirm_txt p a{color: #2164b2;text-decoration: underline}
 
 /* CHORME ONLY  */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 

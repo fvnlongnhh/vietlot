@@ -4,6 +4,8 @@
 
 @media screen and (min-width: 751px) {
     .btn a:hover{background: #fff;color:#073265;}
+    .btn_red a:hover{background: #fff;color: #e30922}
+    .btn_white a:hover{background: #323232;color: #fff}
     
     .slick-arrow:hover::before{cursor: pointer;opacity: 0.8;}
     .slick-slider:hover .slick-arrow{transform: translateY(0);opacity: 1;}
@@ -16,11 +18,15 @@
     .box02_btn p:hover{transform: translateY(-10px);box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15), 0px 4px 7px 0px rgba(0, 0, 0, 0.15)}
     
     #gnavi ul li a:hover{color: #073265;opacity: 1;}
+
+    .games_ct .games_item:hover,
     #btn_top:hover,
+    .box_modal .btn_close:hover,
     .box04_ct ul li a:hover,
-    #footer .foot_col ul li a:hover{opacity: 0.7;}
+    #footer .foot_col ul li a:hover{opacity: 0.7;cursor: pointer}
 
     .game_pages .read a:hover{text-decoration: underline;color: #333;}
+    .confirm_txt p a:hover{text-decoration: none;}
 }
 
 @media screen and (max-width: 768px) {
@@ -59,12 +65,12 @@
     
     .slick-arrow{width: 30px;height: 30px;top: calc(50% - 15px);transform: translateY(0);opacity: 1;}
     .slick-arrow::before{width: 30px;height: 30px;}
+
     /*==========================================================================*/
     /*                               ALL                                        */
     /*==========================================================================*/
     #header{padding-bottom: 0}
     #header h1{display: none}
-
     #gnavi{display: none;}
     
     #index .ttl h3{font-size: 24px;}
@@ -74,23 +80,15 @@
     /*                               MAIN                                       */
     /*==========================================================================*/
     
-
-
-    /* ===========  OVERNOTE ===========  */
     
-    .under .news_list_ct1 dl{width: 48%}
-    .under .news_list_ct1 dl:nth-child(3n + 3){margin-right: 2%}
-    .under .news_list_ct1 dl:nth-child(2n + 2){margin-right: 0}
-    .under .news_list_ct1 dt{height: 30.5vw;width: 100%}
     
-    .under .news_list_ct2 dl{flex-wrap: wrap;}
-    .under .news_list_ct2 dt{width: 100%;order:2;}
-    .under .news_list_ct2 dd{width: 100%;order:1;margin-bottom: 15px;height: auto}
-    .under .news_list_ct2 dd a{width: 100%;height: 62vw}
+    /*==========================================================================*/
+    /*                               CHILD PAGE                                 */
+    /*==========================================================================*/
 
-    .under#news_detail #content img{max-height: 300px}
-    
-
+    /* ALL GAME PAGE */
+    .game_pages #header h1{display: flex}
+    .game_pages p{font-size: 14px;}
 }
 
 @media screen and (max-width: 560px) {
@@ -99,11 +97,27 @@
 }
 
 @media screen and (max-width: 480px) {
-    .under #main .blog_list_btn li{width: 100%;max-width: 100%;margin:0 0 15px;}
-    .under #main .blog_list_btn li:nth-child(3n + 3),
-    .under #main .blog_list_btn li:nth-child(2n + 2),
-    .under #main .blog_list_btn li:last-child{margin-right: 0}
-    .under #main .blog_list_btn li:last-child{margin-bottom: 0}
+
+    .games_ct .games_item{padding-left: 5px;}
+    .games_ct .games_item .date,
+    .games_ct .games_item .time{font-size: 12px}
+    .games_ct .games_item .date span,
+    .games_ct .games_item .time span{margin-left: 0}
+    .games_ct .games_item .money{font-size: 20px}
+    .games_ct .games_item .img{width: 80px;margin-right: 10px}
+    .games_ct .games_item .arr{width: 30px;}
+    .games_ct .games_item .arr a{width: 9px}
+    
+    /* BOX MODAL POPUP */
+    .box_modal_head{height: 50px}
+    .box_modal_head h3{font-size: 18px}
+    .box_modal_body{max-height: calc(100% - 115px)}
+    .box_modal_foot .btn a{width: 260px}
+    .box_modal .btn_close{top: 10px;right: 10px;width: 15px}
+
+    /* CONFIRM TEL */
+    .confirm_tel select{width: 70px}
+    .confirm_tel input{width: calc(98% - 70px)}
     
 }
 
