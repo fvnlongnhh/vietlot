@@ -1,16 +1,18 @@
 $(document).ready(function() {
     "use strict";
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('#btn_top').fadeIn(300);
-            $('#header').addClass('active');
-            $('#gnavi').addClass('fix');
-        } else {
-            $('#btn_top').fadeOut(300);
-            $('#header').removeClass('active');
-            $('#gnavi').removeClass('fix');
-        }
-    });
+    if ($(window).width() > 768) {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('#btn_top').fadeIn(300);
+                $('#header').addClass('active');
+                $('#gnavi').addClass('fix');
+            } else {
+                $('#btn_top').fadeOut(300);
+                $('#header').removeClass('active');
+                $('#gnavi').removeClass('fix');
+            }
+        });
+    }
 
     $('#btn_top').click(function() {
         $('body,html').animate({ scrollTop: 0 }, 800);
@@ -39,9 +41,9 @@ $(document).ready(function() {
 
     $('.btn_modal').click(function (){
         $('.box_modal, body').addClass('active');
-    })
+    });
 
     $('.box_modal .close_modal').click(function (){
         $('.box_modal, body').removeClass('active');
-    })
+    });
 });

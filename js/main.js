@@ -24,7 +24,21 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         centerMode: true,
-        centerPadding: 0
+        centerPadding: 0,
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 421,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+        ]
     });
 
     $('.box05_list ul').slick({
@@ -38,7 +52,21 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         centerMode: true,
-        centerPadding: 0
+        centerPadding: 0,
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 421,
+              settings: {
+                slidesToShow: 1
+              }
+            }
+        ]
     });
 
     $('.box08_ct ul').slick({
@@ -52,7 +80,34 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         centerMode: true,
-        centerPadding: 0
+        centerPadding: 0,
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 5
+              }
+            },
+            {
+              breakpoint: 421,
+              settings: {
+                slidesToShow: 3
+              }
+            }
+        ]
+    });
+
+    // MENU MOBILE CLICK
+    $(".btn_side").click(function () {
+        $(this).toggleClass('open');
+        $("#gnavi").toggleClass("active");
+        return false;
+    });
+
+    $("#gnavi ul li a").click(function () {
+        $('.btn_side').removeClass('open');
+        $("#gnavi").removeClass("active");
+        return false;
     });
 
 });
