@@ -80,7 +80,7 @@
     #gnavi ul li.btn a{width: 290px;margin-top: 15px;background: #fff;color: #1b3a8e;padding: 0;display: flex;}
 
     .ttl{margin-bottom: 30px}
-    .ttl h3{font-size: 24px;}
+    .ttl h3{font-size: 24px;margin-bottom: 10px}
     .ttl p{font-size: 16px;}
 
     .btn a{width: 290px;}
@@ -90,11 +90,15 @@
     .box01_ct ul{justify-content: space-between;}
     .box01_ct ul li{width: calc((100vw - 50px) / 2);margin: 0 0 20px;}
     .box01_ct ul li span{font-size: 18px;margin-top: 15px;}
+    .box01_ct ul li img{width: 50px}
     
     .box02{background: url('../images/box02_bg_sp.jpg') top center fixed no-repeat;padding: 300px 0 50px;}
     .box02_ct{padding: 30px}
 
     .box03_ct .box03_list ul li .box03_video{width: 100%;height: calc((100vw - 30px) * 9 / 16)}
+    .box03_ct .box03_list ul li p{font-size: 14px}
+
+    .box04_ct .box04_img{margin-bottom: 30px}
 
     .box05_ct .box05_list ul li{padding: 15px}
 
@@ -117,10 +121,12 @@
     #footer .foot_ct .inner{flex-direction: column}
     #footer .foot_col{width: 100%;margin: 0 auto 15px;padding-bottom: 15px;border-bottom: 1px dashed #fff;text-align: center;}
     #footer .foot_col p{margin-bottom: 15px}
+    #footer #foot_contact{order: 3;text-align: left;}
     #footer #foot_contact p{margin-bottom: 5px}
+    #footer #foot_contact .big{text-align: center;}
     #footer .foot_col p:last-child{margin-bottom: 0}
     #footer .foot_col ul{justify-content: center;margin-bottom: 0}
-    #footer .foot_col:last-child{margin-bottom: 0;padding-bottom: 0;border: none;}
+
     #footer .foot_col .big{font-size: 18px;}
     /*==========================================================================*/
     /*                               CHILD PAGE                                 */
@@ -132,17 +138,16 @@
 }
 
 @media screen and (max-width: 560px) {
-   .box02_btn p{margin: 0 auto 15px;}
+    .box02_btn p{margin: 0 auto 15px;}
+
+    .box06_ct ul li .num{font-size: 24px;margin-bottom: 5px;}
+    .box06_ct ul li p{font-size: 16px;font-weight: 400}
     
 }
 
 @media screen and (max-width: 480px) {
     /* MAIN PAGE */
     .box02_ct{padding: 15px;}
-
-    .box06_ct ul{flex-direction: column;}
-    .box06_ct ul li{width: 100%;margin-bottom: 15px;}
-    .box06_ct ul li:last-child{margin-bottom: 0}
     .box07_ct{width: 100%}
 
     /* SUB PAGE */
@@ -170,12 +175,11 @@
 }
 
 @media screen and (max-width: 420px) {
-
+    .box01_ct ul li span{font-size: 16px;}
 }
 
 @media screen and (max-width: 380px) {
     .btn{padding: 0;width: 100%;box-sizing: border-box}
-    .box01_ct ul li{width: 100%;}
 }
 
 @media screen and (max-width: 360px) {
