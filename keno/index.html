@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Keno</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+<script src="../js/jquery.js"></script>
+</head>
+
+<body id="keno" class="game_pages">
+    <div id="wrapper">
+        <div id="header">
+            <h1 id="logo"><a href="../index.html"><img src="../images/logo.png"></a></h1>
+            <div class="logo_game"><img src="../images/game_keno.png" alt=""></div>
+        </div>
+        <!-- main start -->
+        <div id="main" class="clearfix">
+            <div class="container">
+                <div class="main_ct">
+                    <div class="game_select">
+                        <div class="game_type">
+                            <p>Loại hình</p>
+                            <select name="type" id="type">
+                                <option value="Bậc 1">1</option>
+                                <option value="Lớn Nhỏ - Chẵn Lẻ">Lớn Nhỏ - Chẵn lẻ</option>
+                                <option value="Bậc 2">2</option>
+                                <option value="Bậc 3">3</option>
+                                <option value="Bậc 4">4</option>
+                                <option value="Bậc 5">5</option>
+                                <option value="Bậc 6">6</option>
+                                <option value="Bậc 7">7</option>
+                                <option value="Bậc 8">8</option>
+                                <option value="Bậc 9">9</option>
+                                <option value="Bậc 10">10</option>
+                            </select>
+                        </div>
+
+                        <div class="game_date">
+                            <p>Kỳ quay</p>
+                            <select name="date" id="date">
+                                <option value=" #0007879 - 20:50 13/11/2019"> #0007879 - 20:50 13/11/2019 </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="game_content">
+                        <div class="game_item">
+                            <p class="name">A</p>
+                            <p class="num">
+                                <span>22</span>
+                                <span>44</span>
+                                <span>66</span>
+                                <span>88</span>
+                                <span>39</span>
+                                <span>49</span>
+                                <span>59</span>
+                                <span>69</span>
+                                <span>96</span>
+                                <span>21</span>
+                            </p>
+                            <p class="icon">
+                                <img src="../images/ic_refresh.png" alt="Chọn ngẫu nhiên">
+                            </p>
+                            <div class="price">
+                                <select name="price" id="price">
+                                    <option value="10K">10K</option>
+                                    <option value="20K">20K</option>
+                                    <option value="50K">50K</option>
+                                    <option value="100K">100K</option>
+                                    <option value="200K">200K</option>
+                                    <option value="500K">500K</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="game_item">
+                            <p class="name">B</p>
+                            <p class="num">
+                                <span>22</span>
+                                <span>44</span>
+                                <span>66</span>
+                                <span>88</span>
+                                <span>39</span>
+                            </p>
+                            <p class="icon">
+                                <img src="../images/ic_trash.png" alt="Chọn lại">
+                            </p>
+                            <div class="price">
+                                <select name="price" id="price">
+                                    <option value="10K">10K</option>
+                                    <option value="20K">20K</option>
+                                    <option value="50K">50K</option>
+                                    <option value="100K">100K</option>
+                                    <option value="200K">200K</option>
+                                    <option value="500K">500K</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONFIRM TEL -->
+        <div class="box_modal">
+            <div class="box_modal_bg"></div>
+            <div class="box_modal_ct">
+                <div class="box_modal_head">
+                    <p class="btn_close close_modal"><img src="../images/ic_menu_close.png" width="20" alt="Đóng"></p>
+                    <h3>Xác minh số điện thoại</h3>
+                </div>
+                <div class="box_modal_body">
+                    <div class="confirm_ct">
+                        <div class="confirm_tel">
+                            <select name="postcode" id="postcode">
+                                <option value="Vietnam">+84</option>
+                                <option value="Vietnam">Vietnam +84</option>
+                            </select>
+                            <input type="number">
+                        </div>
+                        <div class="confirm_txt">
+                            <p>Vietlott Online sử dụng Account Kit, một công nghệ của Facebook, để giúp bạn đăng nhập. Bạn không cần có tài khoản Facebook. Một thông báo xác nhận bằng văn bản hoặc SMS có thể được gửi để xác minh số của bạn. Cước dữ liệu và tin nhắn có thể phát sinh. <a href="https://www.accountkit.com/faq/?locale=vi_VN" target="_blank">Tìm hiểu về cách Facebook sử dụng thông tin của bạn.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_modal_foot">
+                    <p class="btn btn_red"><a href="../history/">Sử dụng SMS</a></p> <!-- Click vào đây thì sẽ open ra mục xác nhận sdt đang Comment Out ở dưới -->
+                    <p class="btn btn_white close_modal"><a>Sử dụng <span>WhatsApp</span></a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONFIRM TEL DONE -->
+        <!-- <div class="box_modal box_tel_done">
+            <div class="box_modal_bg"></div>
+            <div class="box_modal_ct">
+                <div class="box_modal_head">
+                    <p class="btn_close close_modal"><img src="../images/ic_menu_close.png" width="20" alt="Đóng"></p>
+                    <h3>Xác minh số điện thoại</h3>
+                </div>
+                <div class="box_modal_body">
+                    <div class="confirm_ct">
+                        <p class="center">Đã xác minh tài khoản</p>
+                        <p class="btn btn_red"><a href="../history/">Tiếp tục</a></p>
+                        <div class="confirm_txt">
+                            <p>Nhấn vào Tiếp tục để chấp nhận <a target="_blank" href="https://www.facebook.com/terms/"data-lnfb-mode="origin">Điều khoản</a>, <a target="_blank" href="https://www.facebook.com/privacy/explanation/" data-lnfb-mode="origin">Chính sách dữ liệu</a>, <a target="_blank" href="https://www.facebook.com/help/cookies/update" data-lnfb-mode="origin">việc sử dụng cookie</a> của Facebook và <a target="_blank" href="http://luckybets.vn/term.html" data-lnfb-mode="origin">Chính sách quyền riêng tư</a> cũng như <a target="_blank" href="https://luckybets.vn:8443/vietlott_user/user/app" data-lnfb-mode="origin">Điều khoản dịch vụ</a> của Vietlott Online. <a target="_blank" href="/faq/?locale=vi_VN" class="_1_5n" data-lnfb-mode="origin">Tìm hiểu thêm</a> về cách xác minh tài khoản của bạn.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_modal_foot">
+                    <p class="btn btn_white close_modal"><a>Sử dụng <span>WhatsApp</span></a></p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="../js/vietlot.js"></script>
+</body>
+
+</html>

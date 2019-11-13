@@ -29,7 +29,7 @@ table {width: 100%;font-size:inherit; font: 100%; color: #333; line-height: 1.4;
 p {margin: 0 0 1.5em;}
 div > p:last-child{margin-bottom: 0}
 input,
-select{height: 50px;border:1px solid #999;padding: 5px 10px;font-size: 14px;background: #fff;border-radius: 5px;}
+select{height: 40px;border:1px solid #999;padding: 5px;font-size: 14px;background: #fff;border-radius: 5px;max-width: 100%}
 /*==========================================================================*/
 /*                            Container                                     */
 /*==========================================================================*/
@@ -218,10 +218,12 @@ td{line-height: 1.75em}
 
 /* ALL GAME PAGE */
 .game_pages{background: #fff}
-.game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;background: #f1f3f5;position: relative;padding-bottom: 50px;min-height: 100vh;}
+.game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;position: relative;padding-bottom: 50px;min-height: 100vh;}
 .game_pages .container{width: 100%;padding: 0 15px;}
-.game_pages #header{height:100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center}
-.game_pages #logo{width: 100px;text-align: center;margin:0 auto;}
+.game_pages #header{height:100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;display: flex;justify-content: space-between;padding: 0 15px;}
+
+.game_pages #logo{width: 100px;}
+.game_pages .logo_game{width: 100px;}
 .game_pages #main{margin-top: 30px}
 .game_pages p{margin-bottom: 0;font-size: 16px;}
 .game_pages input{width: 100%;}
@@ -286,6 +288,7 @@ td{line-height: 1.75em}
 
 /* =========== LOGIN PAGE =========== */
 #login{}
+#login #wrapper{background: #f1f3f5}
 .login_ct{}
 .login_ct p{margin-bottom: 5px}
 
@@ -303,6 +306,26 @@ td{line-height: 1.75em}
 .confirm_txt{margin-top: 15px;}
 .confirm_txt p{font-size: 12px;}
 .confirm_txt p a{color: #2164b2;text-decoration: underline}
+
+
+/* =========== KENO GAMES =========== */
+#keno #header{background: url('../images/head_bg_keno.jpg') left center no-repeat;background-size: cover;}
+
+.game_select{display: flex;justify-content: space-between;padding-bottom: 10px;margin-bottom: 10px;border-bottom: 1px solid #ededed}
+.game_select div p{font-weight: bold;}
+.game_select .game_type{width: 29%}
+.game_select .game_date{width: 69%}
+
+.game_form{}
+.game_item{padding: 10px 0;border-bottom: 1px solid #ededed;display: flex;align-items: center;}
+.game_item p{margin-bottom: 0;}
+.game_item .name{font-weight: bold;color: #ea433c;width: 20px;font-size: 18px;}
+.game_item .num{width: calc(100% - 135px);display: flex;flex-wrap: wrap;}
+.game_item .num span{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;font-weight: bold;margin:2px 5px 2px 0;font-size: 16px;}
+.game_item .num span:nth-child(5n + 5){margin-right: 0}
+.game_item .icon{width: 30px;height: 30px;margin: 0 10px;padding: 8px;background: #eea236;display: flex;justify-content: center;align-items: center;border-radius: 50%;}
+.game_item .price{width: 65px;}
+
 
 /* CHORME ONLY  */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 

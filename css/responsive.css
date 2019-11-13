@@ -176,6 +176,7 @@
 
 @media screen and (max-width: 420px) {
     .box01_ct ul li span{font-size: 16px;}
+    .game_item .num span{width: calc((100vw - 185px) / 5);height: calc((100vw - 185px) / 5);font-size: 14px;}
 }
 
 @media screen and (max-width: 380px) {
