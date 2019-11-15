@@ -33,6 +33,9 @@ $(document).ready(function() {
         });
     }
 
+    $('.num_select span').click(function(){
+        $('.box_pick_num').addClass('active');
+    });
 
     $('.games_item').on('click', function() {
         var href = $(this).find('a').attr('href');
@@ -46,4 +49,19 @@ $(document).ready(function() {
     $('.box_modal .close_modal').click(function (){
         $('.box_modal, body').removeClass('active');
     });
+
+    $('.select_num li').click(function(){
+        $(this).toggleClass('on');
+    });
+
+    $('.select_price li').click(function(){
+        $('.select_price li').removeClass('on');
+        $(this).toggleClass('on');
+    });
+
+    $('.box_bot a, .box_head p').click(function(){
+        $('.box_pick_num').removeClass('active');
+    });
+
+    
 });

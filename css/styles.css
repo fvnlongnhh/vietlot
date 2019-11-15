@@ -29,7 +29,7 @@ table {width: 100%;font-size:inherit; font: 100%; color: #333; line-height: 1.4;
 p {margin: 0 0 1.5em;}
 div > p:last-child{margin-bottom: 0}
 input,
-select{height: 40px;border:1px solid #999;padding: 5px;font-size: 14px;background: #fff;border-radius: 5px;max-width: 100%}
+select{height: 35px;border:1px solid #999;padding: 5px;font-size: 14px;background: #fff;border-radius: 5px;max-width: 100%}
 /*==========================================================================*/
 /*                            Container                                     */
 /*==========================================================================*/
@@ -96,12 +96,15 @@ td{line-height: 1.75em}
 .fs16{font-size: 16px;}
 
 .btn{text-align: center;display: block;margin:0 auto;}
-.btn a{position: relative;text-align: center;color: #fff;width: 260px;height: 50px;background: #1b3a8e;font-size: 16px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase}
+.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 50px;background: #1b3a8e;font-size: 16px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase}
 .btn:last-child a{margin-bottom: 0}
 .btn a span{font-weight: bold}
 .btn a img{}
 .btn_red a{background: #e30922;border-color: #e30922}
 .btn_white a{background: #fff;border-color: #323232;color: #323232}
+.btn_buy{}
+.btn_buy a{display: flex;flex-direction: column;align-items: center;height: 60px}
+.btn_buy a span{font-size: 12px;font-weight: normal;text-transform: none}
 
 /* SLICK ARROW */
 .slick-arrow{width: 40px;height: 40px;position: absolute;top: calc(50% - 20px);left: 15px;z-index: 1;background: none;border: none;transform: translateY(-20px);opacity: 0;transition: all ease-in-out 0.4s}
@@ -216,9 +219,31 @@ td{line-height: 1.75em}
 /*                               CHILD PAGE                                 */
 /*==========================================================================*/
 
+/* =========== LOGIN PAGE =========== */
+#login{}
+#login #wrapper{background: #f1f3f5}
+.login_ct{}
+.login_ct p{margin-bottom: 5px}
+
+/* BOX TERM */
+.box_term{}
+.box_term_ct{}
+.box_term_ct p{margin-bottom: 15px}
+
+/* BOX CONFIRM */
+.confirm_ct{}
+.confirm_ct p{margin-bottom: 15px}
+.confirm_tel{display: flex;justify-content: center;}
+.confirm_tel select{width: 100px;cursor: pointer;font-size: 14px}
+.confirm_tel input{width: 65%;margin-left: 2%}
+.confirm_txt{margin-top: 15px;}
+.confirm_txt p{font-size: 12px;}
+.confirm_txt p a{color: #2164b2;text-decoration: underline}
+
+
 /* ALL GAME PAGE */
 .game_pages{background: #fff}
-.game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;position: relative;padding-bottom: 50px;min-height: 100vh;}
+.game_pages #wrapper{min-width: inherit;margin: 0 auto;width: 768px;position: relative;padding-bottom: 50px;min-height: 100vh;box-sizing: border-box;border:1px solid #999;}
 .game_pages .container{width: 100%;padding: 0 15px;}
 .game_pages #header{height:100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;display: flex;justify-content: space-between;padding: 0 15px;}
 
@@ -234,6 +259,18 @@ td{line-height: 1.75em}
 .control_ct .btn{}
 .control_ct .btn a{}
 .control_ct .btn_red a{}
+
+/* BOX MODAL POPUP */
+.btn_modal{cursor: pointer}
+.box_modal{position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 9;opacity: 0;transform: scale(0);transition: all ease 0.3s}
+.box_modal.active{transform: scale(1);opacity: 1;}
+.box_modal_bg{background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 0;}
+.box_modal .btn_close{position: absolute;top: 15px;right: 15px;line-height: 0}
+.box_modal_ct{background: #fff;width: 90%;height: 90%;top: 5%;left: 5%;position: absolute;z-index: 1;padding-bottom: 15px}
+.box_modal_head{width: 100%;height: 100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;position: relative;text-transform: uppercase;}
+.box_modal_head h3{font-size: 24px}
+.box_modal_body{max-height: 70%;overflow: auto;padding: 20px;margin-bottom: 10px}
+.box_modal_foot{}
 
 /* =========== GAME MAIN PAGE =========== */
 #games{background: #f1f3f5}
@@ -274,44 +311,10 @@ td{line-height: 1.75em}
 .games_ct .games_item.max3d .money{color: #b21a8f}
 .games_ct .games_item.max3d .arr{background: #b21a8f}
 
-/* BOX MODAL POPUP */
-.btn_modal{cursor: pointer}
-.box_modal{position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 9;opacity: 0;transform: scale(0);transition: all ease 0.3s}
-.box_modal.active{transform: scale(1);opacity: 1;}
-.box_modal_bg{background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 0;}
-.box_modal .btn_close{position: absolute;top: 15px;right: 15px;line-height: 0}
-.box_modal_ct{background: #fff;width: 90%;height: 90%;top: 5%;left: 5%;position: absolute;z-index: 1;padding-bottom: 15px}
-.box_modal_head{width: 100%;height: 100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;position: relative;text-transform: uppercase;}
-.box_modal_head h3{font-size: 24px}
-.box_modal_body{max-height: 70%;overflow: auto;padding: 20px;margin-bottom: 10px}
-.box_modal_foot{}
-
-/* =========== LOGIN PAGE =========== */
-#login{}
-#login #wrapper{background: #f1f3f5}
-.login_ct{}
-.login_ct p{margin-bottom: 5px}
-
-/* BOX TERM */
-.box_term{}
-.box_term_ct{}
-.box_term_ct p{margin-bottom: 15px}
-
-/* BOX CONFIRM */
-.confirm_ct{}
-.confirm_ct p{margin-bottom: 15px}
-.confirm_tel{display: flex;justify-content: center;}
-.confirm_tel select{width: 100px;cursor: pointer;font-size: 14px}
-.confirm_tel input{width: 65%;margin-left: 2%}
-.confirm_txt{margin-top: 15px;}
-.confirm_txt p{font-size: 12px;}
-.confirm_txt p a{color: #2164b2;text-decoration: underline}
-
-
 /* =========== KENO GAMES =========== */
 #keno #header{background: url('../images/head_bg_keno.jpg') left center no-repeat;background-size: cover;}
 
-.game_select{display: flex;justify-content: space-between;padding-bottom: 10px;margin-bottom: 10px;border-bottom: 1px solid #ededed}
+.game_select{display: flex;justify-content: space-between;padding-bottom: 10px;border-bottom: 1px solid #ededed}
 .game_select div p{font-weight: bold;}
 .game_select .game_type{width: 29%}
 .game_select .game_date{width: 69%}
@@ -321,11 +324,40 @@ td{line-height: 1.75em}
 .game_item p{margin-bottom: 0;}
 .game_item .name{font-weight: bold;color: #ea433c;width: 20px;font-size: 18px;}
 .game_item .num{width: calc(100% - 135px);display: flex;flex-wrap: wrap;}
-.game_item .num span{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;font-weight: bold;margin:2px 5px 2px 0;font-size: 16px;}
-.game_item .num span:nth-child(5n + 5){margin-right: 0}
+.game_item .num span{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;margin:2px 5px 2px 0;font-size: 14px;padding-top: 2px}
+.game_item .num span.active{background: #ea433c;color: #fff;}
 .game_item .icon{width: 30px;height: 30px;margin: 0 10px;padding: 8px;background: #eea236;display: flex;justify-content: center;align-items: center;border-radius: 50%;}
 .game_item .price{width: 65px;}
 
+.game_item .num_big span{width: 80px;border-radius: 30px;}
+
+.game_total{margin-top: 15px;}
+.game_total p{margin-bottom: 15px}
+.game_total .right{}
+.game_total .right span{color: #ea433c;font-size: 18px;font-weight: bold;}
+
+/* BOX PICK NUMBER */
+.box_pick_num{position: fixed;top: -100%;left: 0;width: 100%;height: 100%;z-index: 23;opacity: 0;visibility: hidden;transition: all ease 0.4s}
+.box_pick_num.active{top: 0;visibility: visible;opacity: 1;}
+.box_pick_num_bg{background: rgba(0, 0, 0, 0.5);position: absolute;width: 100%;height: 100%;z-index: 0;}
+.box_pick_num_ct{width: 600px;box-shadow: 0 5px 15px rgba(0,0,0,.5);position: absolute;top: 10%;left: calc(50% - 300px);z-index: 1;background: #fff;border-radius: 5px;overflow: hidden;}
+.box_pick_num_ct .box_head{background: #ea433c;height: 50px;width: 100%;display: flex;justify-content: flex-end;align-items: center;padding: 0 15px}
+.box_pick_num_ct .box_body{padding: 15px;display: flex;justify-content: space-between;}
+.box_pick_num_ct .box_body_l{width: calc(100% - 150px)}
+.box_pick_num_ct .box_body_l ul{display: flex;flex-wrap: wrap}
+.box_pick_num_ct .box_body_l ul li{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;margin:0 7px 7px 0;font-size: 14px;cursor: pointer;padding-top: 2px}
+.box_pick_num_ct .box_body_l ul li.on{background: #ea433c;color: #fff;}
+.box_pick_num_ct .box_body_r{width: 100px}
+.box_pick_num_ct .box_body_r ul{display: flex;flex-direction: column;}
+.box_pick_num_ct .box_body_r ul li{width: 100%;height: 30px;border-radius: 3px;border:1px solid #ccc;font-size: 14px;display: flex;align-items: center;justify-content: center;text-align: center;margin-bottom: 10px;transition: all ease 0.3s}
+.box_pick_num_ct .box_body_r ul li.on{background: #ea433c;color: #fff;border-color: #ea433c}
+.box_pick_num_ct .box_body_r .list_btn{margin-top: 30px}
+.box_pick_num_ct .box_body_r .list_btn li{background: #f0ad4e;color: #fff;border-color: #f0ad4e}
+.box_pick_num_ct .box_bot{border-top: 1px solid #ededed;margin-top: 15px;padding: 15px 0;}
+.box_pick_num_ct .box_bot .btn{}
+
+
+.box_pick_num_ct .box_body_r ul li:last-child{margin-bottom: 0}
 
 /* CHORME ONLY  */
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
