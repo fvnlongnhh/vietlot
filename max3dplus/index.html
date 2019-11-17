@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=-100%, user-scalable=yes" />
+<meta name="format-detection" content="telephone=no">
+<title>MAX3D PLUS</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
+<script src="../js/jquery.js"></script>
+</head>
+
+<body id="max3dplus" class="game_pages">
+    <div id="wrapper">
+        <div id="header">
+            <h1 id="logo"><a href="../games/"><img src="../images/logo.png"></a></h1>
+            <div class="logo_game"><img src="../images/game_max3d_pl.png" alt="MAX3D PLUS"></div>
+        </div>
+        <!-- main start -->
+        <div id="main" class="clearfix">
+            <div class="container">
+                <div class="main_ct">
+                    <div class="game_select game_select_2">
+                        <div class="link_cart">
+                            <p><a href="../cart/"><img src="../images/ic_cart.png" width="40" alt="Giỏ hàng"></a><span>12</span></p>
+                        </div>
+                        <div class="game_price">
+                            <p>Loại vé</p>
+                            <select name="type" id="type">
+                                <option>Cơ bản</option>
+                            </select>
+                        </div>
+
+                        <div class="game_date">
+                            <p>Kỳ mua</p>
+                            <p class="select_box"><span>1</span> lựa chọn</p>
+                            <ul class="date_list">
+                                <li class="check"><span></span><label>Kỳ #00091 - T2 18/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00092 - T3 19/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00093 - T4 20/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00094 - T5 21/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00095 - T6 22/11/2019</label></li>
+                                <li><span></span><label>Kỳ #00096 - T7 23/11/2019</label></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="game_3dplus">
+                        <div class="game_content">
+                            <div class="game_item">
+                                <p class="name">A</p>
+                                <p class="num">
+                                    <span class="open_box_tab2">232</span>
+                                    <span class="open_box_tab2">448</span>
+                                </p>
+                                <p class="icon">
+                                    <img src="../images/ic_refresh.png" alt="Chọn ngẫu nhiên">
+                                </p>
+                                <div class="price">
+                                    <select name="price" id="price">
+                                        <option>10K</option>
+                                        <option>20K</option>
+                                        <option>50K</option>
+                                        <option>100K</option>
+                                        <option>200K</option>
+                                        <option>500K</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="game_item">
+                                <p class="name">A</p>
+                                <p class="num">
+                                    <span class="open_box_tab2">232</span>
+                                    <span class="open_box_tab2">448</span>
+                                </p>
+                                <p class="icon">
+                                    <img src="../images/ic_trash.png" alt="Xóa">
+                                </p>
+                                <div class="price">
+                                    <select name="price" id="price">
+                                        <option>10K</option>
+                                        <option>20K</option>
+                                        <option>50K</option>
+                                        <option>100K</option>
+                                        <option>200K</option>
+                                        <option>500K</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="game_total">
+                        <p class="right">Tạm tính : <span>10.000.000đ</span></p>
+                        <p class="btn btn_org"><a href="#">Chọn nhanh</a></p>
+                        <p class="btn btn_red"><a href="#">Thêm vào giỏ</a></p>
+                        <p class="btn"><a href="../cart/">Xem giỏ hàng</a></p>
+                    </div>
+
+                    <!-- BOX PICK NUMBER -->
+                    <div class="box_pick_num">
+                        <div class="box_pick_num_bg"></div>
+                        <div class="box_pick_num_ct">
+                            <div class="box_head">
+                                <p class="right"><img src="../images/ic_menu_close.png" width="15" alt="Đóng"></p>
+                            </div>
+
+                            <div class="box_body">
+                                <!-- BOX DÃY SỐ -->
+                                <div class="box_body_om3d box_tab2">
+                                    <div class="box_body_l ">
+                                        <ul class="select_num">
+                                            <li>0</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+
+                                        <ul class="select_num">
+                                            <li>0</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+
+                                        <ul class="select_num">
+                                            <li>0</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="box_body_r">
+                                        <ul class="select_num">
+                                            <li>0</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+
+                                        <ul class="select_num">
+                                            <li>0</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+
+                                        <ul class="select_num">
+                                            <li>0</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box_bot">
+                                <p class="btn btn_red"><a>Đồng ý</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/vietlot.js"></script>
+</body>
+
+</html>

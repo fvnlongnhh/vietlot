@@ -27,10 +27,12 @@
     #footer .foot_col ul li a:hover,
     .box_pick_num_ct .box_body_r .list_btn li:hover,
     .game_item .icon:hover,
+    .game_pages.bg2 #logo a:hover,
     .game_item .num span:hover{opacity: 0.7;cursor: pointer}
 
     .game_pages .read a:hover{text-decoration: underline;color: #333;}
     .confirm_txt p a:hover{text-decoration: none;}
+    .cart_content ul li .delete:hover{color: red}
     
     .box_pick_num_ct .box_body_r .select_price li:hover{background: #ccc;cursor: pointer;}
     .box_pick_num_ct .box_body_r ul li.on:hover{background: #ea433c;color: #fff;border-color: #ea433c}
@@ -147,9 +149,10 @@
     .box_pick_num_ct .box_body_l ul{justify-content: center;}
     .box_pick_num_ct .box_body_l ul li{margin: 0 3px 5px}
     .box_pick_num_ct .box_body_r{width: 100%;margin-top: 15px;padding-top: 15px;border-top: 1px solid #ededed}
-    .box_pick_num_ct .box_bot{margin-top: 0;}
     .box_pick_num_ct .box_bot .btn a{width: 260px;}
-
+    
+    .box_body_om3d .box_body_l{width: 50%}
+    .box_body_om3d .box_body_r{width: 50%;margin: 0;padding: 0;border:none;}
 }
 
 @media screen and (max-width: 560px) {
@@ -194,6 +197,12 @@
     .game_item .num span{width: calc((100vw - 190px) / 5);height: calc((100vw - 190px) / 5);font-size: 12px;}
     .game_item .num span:nth-child(5n + 5){margin-right: 0}
     .game_item .num_big span{width: 70px;height: 35px}
+
+    .game_item_power .num span{width: calc((100vw - 120px) / 6);height: calc((100vw - 120px) / 6);font-size: 12px;}
+    .game_item_power .num span:nth-child(5n + 5){margin-right: 5px}
+    .game_item_power .num span:nth-child(6n + 6){margin-right: 0px}
+
+    .game_3dplus .game_item .num span{width: 70px;height: 35px;}
 
 }
 

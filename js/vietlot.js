@@ -33,9 +33,22 @@ $(document).ready(function() {
         });
     }
 
-    $('.num_select span').click(function(){
+    $('.open_boxpick').click(function(){
         $('.box_pick_num').addClass('active');
     });
+
+    $('.open_box_tab1').click(function(){
+        $('.box_pick_num').addClass('active');
+        $('.box_tab1').addClass('active');
+        $('.box_tab2').removeClass('active');
+    });
+
+    $('.open_box_tab2').click(function(){
+        $('.box_pick_num').addClass('active');
+        $('.box_tab2').addClass('active');
+        $('.box_tab1').removeClass('active');
+    });
+
 
     $('.games_item').on('click', function() {
         var href = $(this).find('a').attr('href');
@@ -54,6 +67,11 @@ $(document).ready(function() {
         $(this).toggleClass('on');
     });
 
+    $('.box_body_om3d .select_num li').click(function(){
+        $(this).parent().find('li').removeClass('on');
+        $(this).addClass('on');
+    });
+
     $('.select_price li').click(function(){
         $('.select_price li').removeClass('on');
         $(this).toggleClass('on');
@@ -61,6 +79,14 @@ $(document).ready(function() {
 
     $('.box_bot a, .box_head p').click(function(){
         $('.box_pick_num').removeClass('active');
+    });
+
+    $('.select_box').click(function(){
+        $('.date_list').toggleClass('active');
+    });
+
+    $('.date_list li').click(function(){
+        $(this).toggleClass('check');
     });
 
     
