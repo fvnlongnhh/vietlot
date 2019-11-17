@@ -429,7 +429,7 @@ td{line-height: 1.75em}
 .box_pick_num_ct .box_body_om3d .box_body_r ul li.on{background: #ea433c;color: #fff;}
 
 .box_pick_num_ct .box_body_auto{margin: 0 auto}
-.box_pick_num_ct .box_body_auto .box_body_l{width: 260px;display: flex;flex-wrap: wrap;}
+.box_pick_num_ct .box_body_auto .box_body_l{width: 260px;display: flex;flex-wrap: wrap;margin: 0 auto}
 .box_pick_num_ct .box_body_auto .box_body_l p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
 .box_pick_num_ct .box_body_auto .box_body_l ul{flex-direction: column;width: calc(100% / 3);justify-content: center;align-items: center}
 
