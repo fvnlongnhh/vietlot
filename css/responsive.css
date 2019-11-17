@@ -140,7 +140,7 @@
     /*==========================================================================*/
     /* ALL GAME PAGE */
     .game_pages #header h1{display: flex}
-    .game_pages p{font-size: 14px;}
+    .game_pages p{}
 
     /* BOX PICK NUMB */
     .box_pick_num_ct{width: calc(100% - 30px);height: 90vh;left: 15px;top:5vh;overflow: auto;}
@@ -182,7 +182,7 @@
     /* BOX MODAL POPUP */
     .box_modal_head{height: 50px}
     .box_modal_head h3{font-size: 18px}
-    .box_modal_body{max-height: calc(100% - 115px)}
+    .box_modal_body{}
     .box_modal_foot .btn a{width: 260px}
     .box_modal .btn_close{top: 10px;right: 10px;width: 15px}
 

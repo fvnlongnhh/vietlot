@@ -46,7 +46,7 @@ dd,
 dt,
 li,
 th,
-td{line-height: 1.75em}
+td{line-height: 1.75em;font-size: 14px;}
 
 .bold{font-weight: bold}
 .red{color: red;}
@@ -228,6 +228,11 @@ td{line-height: 1.75em}
 #login{}
 .login_ct{}
 .login_ct p{margin-bottom: 5px}
+.login_ct .red{margin-top: 15px;}
+.login_ct .tel{display: flex;padding-bottom: 10px;border-bottom: 1px solid #ccc;margin-top: 15px}
+.login_ct .confirm{}
+.login_ct .tel select{width: 60px;border:none;border-radius: 0;background: #f1f3f5}
+.login_ct .tel input{width: calc(100% - 120px);margin-left: 10px;padding-left: 10px;border:none;border-radius: 0;background: #f1f3f5;border-left: 1px solid #ccc}
 
 /* BOX TERM */
 .box_term{}
@@ -243,12 +248,13 @@ td{line-height: 1.75em}
 .confirm_txt{margin-top: 15px;}
 .confirm_txt p{font-size: 12px;}
 .confirm_txt p a{color: #2164b2;text-decoration: underline}
+.confirm_box{padding: 15px;background: #f5e8e8;border: 1px solid #ea433c;}
+.confirm_btn{display: flex;justify-content: space-between;margin-top: 15px}
+.confirm_btn p{width: 45%;}
+.confirm_btn p a{max-width: 100%;margin-bottom: 0}
 
 /* CONTROL BUTTON */
 .control_ct{margin-top: 30px}
-.control_ct .btn{}
-.control_ct .btn a{}
-.control_ct .btn_red a{}
 
 /* BOX MODAL POPUP */
 .btn_modal{cursor: pointer}
@@ -256,10 +262,10 @@ td{line-height: 1.75em}
 .box_modal.active{transform: scale(1);opacity: 1;}
 .box_modal_bg{background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 0;}
 .box_modal .btn_close{position: absolute;top: 15px;right: 15px;line-height: 0}
-.box_modal_ct{background: #fff;width: 90%;height: 90%;top: 5%;left: 5%;position: absolute;z-index: 1;padding-bottom: 15px}
+.box_modal_ct{background: #fff;width: 90%;height: 90%;top: 5%;left: 5%;position: absolute;z-index: 1;padding-bottom: 15px;overflow: auto}
 .box_modal_head{width: 100%;height: 100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;position: relative;text-transform: uppercase;}
 .box_modal_head h3{font-size: 24px}
-.box_modal_body{max-height: 70%;overflow: auto;padding: 20px;margin-bottom: 10px}
+.box_modal_body{padding: 20px;margin-bottom: 10px}
 .box_modal_foot{}
 
 /* ALL GAME PAGE */
@@ -279,14 +285,14 @@ td{line-height: 1.75em}
 .game_pages #logo{width: 100px;}
 .game_pages .logo_game{width: 100px;}
 .game_pages #main{margin-top: 30px}
-.game_pages p{margin-bottom: 0;font-size: 14px;}
+.game_pages p{}
 .game_pages input{width: 100%;}
 .game_pages input::placeholder{color: #ccc}
 
 .game_pages.bg2{background: #f1f3f5}
 .game_pages.bg2 #header{justify-content: center;height: 60px}
 .game_pages.bg2 #logo{width: 100%;text-align: center;position: relative;color: #fff;font-size: 18px;justify-content: center;text-transform: uppercase;}
-.game_pages.bg2 #logo a{width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;position: absolute;top: 0;left: -5px;background: #fff;transform: rotate(180deg);border-radius: 50%;}
+.game_pages.bg2 #logo a{width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;position: absolute;top: -5px;left: -5px;background: #fff;transform: rotate(180deg);border-radius: 50%;}
 .game_pages.bg2 #logo a img{width: 9px}
 
 /* =========== GAME MAIN PAGE =========== */
@@ -470,7 +476,6 @@ td{line-height: 1.75em}
 .cart_content ul li td.org{font-style: italic;}
 .cart_content ul li td span{margin: 0 5px 0 0;display: inline-block;}
 
-
 .cart_content ul li::before{width: 80px;height: 46px;position: absolute;top: 0;right: 0;content: '';opacity: 0.3;}
 .cart_content ul li.max4d::before{background: url('../images/game_max4d.png') center no-repeat;background-size: cover;}
 .cart_content ul li.max3d::before{background: url('../images/game_max3d.png') center no-repeat;background-size: cover;}
@@ -483,13 +488,10 @@ td{line-height: 1.75em}
 .cart_foot .cart_btn li{width: 48%}
 .cart_foot .cart_btn li a{width: 100%}
 
-
 /* =========== HISTORY PAGE =========== */
 #history #wrapper{padding-bottom: 0}
 #history .cart_content{padding: 0 15px;height: calc(100vh - 162px);overflow: auto;}
 #history .cart_foot{padding: 15px;}
-
-
 
 /* =========== RESULT PAGE =========== */
 .ticket_content{}
