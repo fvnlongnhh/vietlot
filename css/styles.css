@@ -100,7 +100,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .fs16{font-size: 16px;}
 
 .btn{text-align: center;display: block;margin:0 auto;}
-.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 40px;background: #1b3a8e;font-size: 14px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase}
+.btn a{position: relative;text-align: center;color: #fff;width: 290px;height: 40px;background: #1b3a8e;font-size: 14px;text-decoration: none;display: flex;justify-content: center;align-items: center;margin:0 auto 15px;cursor: pointer;transition:  all ease 0.3s;border:1px solid #1b3a8e;border-radius: 5px;text-transform: uppercase;}
 .btn:last-child a{margin-bottom: 0}
 .btn a span{font-weight: bold}
 .btn a img{}
@@ -277,7 +277,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_modal.active{transform: scale(1);opacity: 1;}
 .box_modal_bg{background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 0;}
 .box_modal .btn_close{position: absolute;top: 15px;right: 15px;line-height: 0}
-.box_modal_ct{background: #fff;width: 90%;height: 90%;top: 5%;left: 5%;position: absolute;z-index: 1;padding-bottom: 15px;overflow: auto}
+.box_modal_ct{background: #fff;width: 600px;height: 90%;top: 5%;left: calc(50% - 300px);position: absolute;z-index: 1;padding-bottom: 15px;overflow: auto}
 .box_modal_head{width: 100%;height: 100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;justify-content: center;text-align: center;color: #fff;position: relative;text-transform: uppercase;}
 .box_modal_head h3{font-size: 24px}
 .box_modal_body{padding: 20px;margin-bottom: 10px}
@@ -311,7 +311,7 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages.bg2{background: #f1f3f5}
 .game_pages.bg2 #header{justify-content: center;height: 60px}
 .game_pages.bg2 #logo{width: 100%;text-align: center;position: relative;color: #fff;font-size: 18px;justify-content: center;text-transform: uppercase;}
-.game_pages.bg2 #logo a{width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;position: absolute;top: -5px;left: -5px;background: #fff;transform: rotate(180deg);border-radius: 50%;}
+.game_pages.bg2 #logo a{width: 30px;height: 30px;display: flex;align-items: center;justify-content: center;position: absolute;top: calc(50% - 15px);left: -5px;background: #fff;transform: rotate(180deg);border-radius: 50%;}
 .game_pages.bg2 #logo a img{width: 9px}
 
 /* =========== GAME MAIN PAGE =========== */
@@ -358,6 +358,31 @@ td{line-height: 1.75em;font-size: 14px;}
 .games_guide{}
 .games_guide a{border:3px solid #fff;border-radius: 5px;width: 100%;display: flex;align-items: center;justify-content: center;font-size: 18px;text-transform: uppercase;color: #fff;padding: 15px;}
 .games_guide a img{margin-right: 5px;}
+
+/* =========== PAYMENT PAGE =========== */
+#payment_bank #wrapper{padding-bottom: 0}
+#payment_bank .confirm_txt p a{color: #fff;text-decoration: none;}
+#payment_bank .confirm_txt .btn_white a{color: #333;text-decoration: none;}
+#payment_bank .confirm_txt .bold {display: flex;align-items: center;}
+
+.payment_content{}
+.payment_wallet{display: flex;justify-content: space-between;width: 100%;margin-bottom: 15px;padding-bottom: 15px;border-bottom: 1px dashed #999}
+.payment_wallet p{width: 50%;margin-bottom: 0}
+.payment_wallet .red{display: flex;justify-content: flex-end}
+.payment_item{padding: 15px 10px;background: #fff;border-radius: 5px;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);position: relative;margin-bottom: 15px;display: flex;align-items: center;cursor: pointer}
+.payment_item p{margin-bottom: 0;font-size: 12px}
+.payment_item .img{width: 70px;margin: 0 10px 0 0}
+.payment_item .txt{width: calc(100% - 80px);position: relative;padding-right: 15px;text-align: center;}
+.payment_item .txt::before{content: '';position: absolute;top: calc(50% - 8px);right: 0;width: 9px;height: 16px;background: url('../images/ic_arr.png') center no-repeat;background-size: cover;}
+.payment_item .txt .green{color: green}
+.payment_item .txt .sm a{font-size: 12px;color: #2164b2;text-decoration: underline;margin-top: 10px;display: block}
+
+.payment_txt{margin-bottom: 15px;}
+.payment_txt p{margin-bottom: 10px}
+.payment_list{height: calc(100vh - 260px);overflow: auto}
+.payment_item.no_link{}
+.payment_item.no_link .txt{padding-right: 0;text-align:left;}
+.payment_item.no_link .txt::before{display: none;}
 
 /* =========== GUIDE PAGE =========== */
 .guide_pages #wrapper{padding-bottom: 0}

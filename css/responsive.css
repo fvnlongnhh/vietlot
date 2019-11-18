@@ -4,7 +4,9 @@
 
 @media screen and (min-width: 769px) {
     .btn a:hover{background: #fff;color:#073265;}
+    #payment_bank .confirm_txt p a:hover,
     .btn_red a:hover{background: #fff;color: #e30922}
+    #payment_bank .confirm_txt .btn_white:hover a,
     .btn_white a:hover{background: #323232;color: #fff}
     
     .slick-arrow:hover::before{cursor: pointer;opacity: 0.8;}
@@ -34,6 +36,7 @@
     .game_pages .read a:hover{text-decoration: underline;color: #333;}
     .confirm_txt p a:hover{text-decoration: none;}
     .cart_content ul li .delete:hover{color: red}
+    .function_bot p a:hover{background: darkorange;}
     
     .box_pick_num_ct .box_body_r .select_price li:hover{background: #ccc;cursor: pointer;}
     .box_pick_num_ct .box_body_r ul li.on:hover{background: #ea433c;color: #fff;border-color: #ea433c}
@@ -186,6 +189,7 @@
     .games_ct .games_item .arr a{width: 9px}
     
     /* BOX MODAL POPUP */
+    .box_modal_ct{width: 90%;left: 5%}
     .box_modal_head{height: 50px}
     .box_modal_head h3{font-size: 18px}
     .box_modal_body{}
