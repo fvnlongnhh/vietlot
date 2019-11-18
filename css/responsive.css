@@ -18,7 +18,8 @@
     .box02_btn p:hover{transform: translateY(-10px);box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.15), 0px 4px 7px 0px rgba(0, 0, 0, 0.15)}
     
     #gnavi ul li a:hover{color: #073265;opacity: 1;}
-
+    
+    .games_guide a:hover,
     .games_ct .games_item:hover,
     #btn_top:hover,
     .box_modal .btn_close:hover,
@@ -26,9 +27,9 @@
     .box_pick_num_ct .box_head p:hover,
     #footer .foot_col ul li a:hover,
     .box_pick_num_ct .box_body_r .list_btn li:hover,
-    .game_item .icon:hover,
+    .game_content .game_item .icon:hover,
     .game_pages.bg2 #logo a:hover,
-    .game_item .num span:hover{opacity: 0.7;cursor: pointer}
+    .game_content .game_item .num span:hover{opacity: 0.7;cursor: pointer}
 
     .game_pages .read a:hover{text-decoration: underline;color: #333;}
     .confirm_txt p a:hover{text-decoration: none;}
@@ -153,6 +154,11 @@
     
     .box_body_om3d .box_body_l{width: 50%}
     .box_body_om3d .box_body_r{width: 50%;margin: 0;padding: 0;border:none;}
+
+    /* GUIDE PAGE */
+    .guide_video iframe{width: calc(100vw - 30px);height: calc((100vw - 30px) * 9 / 16)}
+
+
 }
 
 @media screen and (max-width: 560px) {
@@ -194,13 +200,13 @@
 
 @media screen and (max-width: 420px) {
     .box01_ct ul li span{font-size: 16px;}
-    .game_item .num span{width: calc((100vw - 190px) / 5);height: calc((100vw - 190px) / 5);font-size: 12px;}
-    .game_item .num span:nth-child(5n + 5){margin-right: 0}
-    .game_item .num_big span{width: 70px;height: 35px}
+    .game_content .game_item .num span{width: calc((100vw - 190px) / 5);height: calc((100vw - 190px) / 5);font-size: 12px;}
+    .game_content .game_item .num span:nth-child(5n + 5){margin-right: 0}
+    .game_content .game_item .num_big span{width: 70px;height: 35px}
 
-    .game_item_power .num span{width: calc((100vw - 120px) / 6);height: calc((100vw - 120px) / 6);font-size: 12px;}
-    .game_item_power .num span:nth-child(5n + 5){margin-right: 5px}
-    .game_item_power .num span:nth-child(6n + 6){margin-right: 0px}
+    .game_content .game_item_power .num span{width: calc((100vw - 120px) / 6);height: calc((100vw - 120px) / 6);font-size: 12px;}
+    .game_content .game_item_power .num span:nth-child(5n + 5){margin-right: 5px}
+    .game_content .game_item_power .num span:nth-child(6n + 6){margin-right: 0px}
 
     .game_3dplus .game_item .num span{width: 70px;height: 35px;}
 
