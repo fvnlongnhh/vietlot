@@ -49,6 +49,11 @@ $(document).ready(function() {
         $('.box_tab1').removeClass('active');
     });
 
+    $('.list_reward_tel li').click(function(){
+        $('.list_reward_tel li').removeClass('active');
+        $(this).addClass('active');
+    });
+
 
     $('.games_item, .guide_item, .payment_item').on('click', function() {
         var href = $(this).find('a').attr('href');
