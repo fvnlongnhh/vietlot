@@ -72,7 +72,7 @@ $(document).ready(function() {
         $(this).toggleClass('on');
     });
 
-    $('.box_body_om3d .select_num li').click(function(){
+    $('.box_body_3d .select_num li').click(function(){
         $(this).parent().find('li').removeClass('on');
         $(this).addClass('on');
     });

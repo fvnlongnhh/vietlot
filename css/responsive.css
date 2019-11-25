@@ -146,6 +146,7 @@
     .game_pages #header h1{display: flex}
     .game_pages p{}
 
+
     /* BOX PICK NUMB */
     .box_pick_num_ct{width: calc(100% - 30px);height: 90vh;left: 15px;top:5vh;overflow: auto;}
     .box_pick_num_ct .box_body{flex-direction: column;}
@@ -155,8 +156,9 @@
     .box_pick_num_ct .box_body_r{width: 100%;margin-top: 15px;padding-top: 15px;border-top: 1px solid #ededed}
     .box_pick_num_ct .box_bot .btn a{width: 260px;}
     
-    .box_body_om3d .box_body_l{width: 50%}
-    .box_body_om3d .box_body_r{width: 50%;margin: 0;padding: 0;border:none;}
+    .box_pick_num_ct .box_body_3d{flex-direction: column;}
+    .box_pick_num_ct .box_body_3d .box_body_l{width: 100%}
+    .box_pick_num_ct .box_body_3d .box_body_r{width: 100%;padding: 10px 20px;margin-top: 0}
 
     /* GUIDE PAGE */
     .guide_video iframe{width: calc(100vw - 30px);height: calc((100vw - 30px) * 9 / 16)}

@@ -290,11 +290,9 @@ td{line-height: 1.75em;font-size: 14px;}
 .game_pages #header{height:100px;background: url('../images/head_bg_red.jpg') left center no-repeat;background-size: cover;display: flex;align-items: center;display: flex;justify-content: space-between;padding: 0 15px;}
 .game_pages #header p.bold{text-align: center;color: #fff;text-transform: uppercase;font-size: 18px;}
 
-#max4d #header,
-#ommax3dplus #header{background: url('../images/head_bg_purple.png') left center no-repeat;background-size: cover;}
+#max4d #header{background: url('../images/head_bg_purple.png') left center no-repeat;background-size: cover;}
 
 #max3d #header,
-#max3dplus #header,
 #mega645 #header{background: url('../images/head_bg_645.png') left center no-repeat;background-size: cover;}
 
 .game_pages #logo{width: 80px;}
@@ -487,17 +485,16 @@ td{line-height: 1.75em;font-size: 14px;}
 .box_pick_num_ct .box_bot .btn{}
 .box_pick_num_ct .box_body_r ul li:last-child{margin-bottom: 0}
 
-.box_pick_num_ct .box_body_om3d .box_body_l{width: 50%;display: flex;flex-wrap: wrap;border-right: 1px solid #ededed;padding-right: 10px}
-.box_pick_num_ct .box_body_om3d .box_body_l p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
-.box_pick_num_ct .box_body_om3d .box_body_l ul{flex-direction: column;width: calc(100% / 3);align-items: center;}
-.box_pick_num_ct .box_body_om3d .box_body_l ul li{margin: 0 0 5px}
-.box_pick_num_ct .box_body_om3d .box_body_l ul li:last-child{margin: 0}
-.box_pick_num_ct .box_body_om3d .box_body_r{width: 50%;padding: 0;margin: 0;display: flex;flex-wrap: wrap;justify-content: space-around;padding-left: 10px}
-.box_pick_num_ct .box_body_om3d .box_body_r p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
-.box_pick_num_ct .box_body_om3d .box_body_r ul{flex-direction: column;width: calc(100% / 3);justify-content: center;align-items: center}
-.box_pick_num_ct .box_body_om3d .box_body_r li{width: 35px;height: 35px;border-radius: 50%;border:1px solid #ea433c;display: flex;justify-content: center;align-items: center;margin:0 0 5px 0;font-size: 14px;cursor: pointer;padding-top: 2px}
-.box_pick_num_ct .box_body_om3d .box_body_r ul li.on{background: #ea433c;color: #fff;}
+.box_pick_num_ct .box_body_3d{display: flex;justify-content: space-between;}
+.box_pick_num_ct .box_body_3d .box_body_l{display: flex;flex-wrap: wrap;border:none;padding: 20px 10px;width: calc(100% - 150px);}
+.box_pick_num_ct .box_body_3d .box_body_l p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
+.box_pick_num_ct .box_body_3d .box_body_l ul{flex-direction: column;width: calc(100% / 3);align-items: center;}
+.box_pick_num_ct .box_body_3d .box_body_l ul li{margin: 0 0 5px}
+.box_pick_num_ct .box_body_3d .box_body_l ul li:last-child{margin: 0}
+.box_pick_num_ct .box_body_3d .box_body_r{width: 120px;padding: 20px 20px 0 0}
 
+.box_pick_num_ct .box_body_4d .box_body_l ul{width: 25%;}
+ 
 .box_pick_num_ct .box_body_auto{margin: 0 auto}
 .box_pick_num_ct .box_body_auto .box_body_l{width: 260px;display: flex;flex-wrap: wrap;margin: 0 auto}
 .box_pick_num_ct .box_body_auto .box_body_l p{width: 100%;margin-bottom: 5px;text-transform: uppercase}
