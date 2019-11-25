@@ -139,6 +139,8 @@
     #footer .foot_col ul{justify-content: center;margin-bottom: 0}
 
     #footer .foot_col .big{font-size: 18px;}
+
+    .function_bot{width: 100%;left: 0}
     /*==========================================================================*/
     /*                               CHILD PAGE                                 */
     /*==========================================================================*/
@@ -162,7 +164,11 @@
 
     /* GUIDE PAGE */
     .guide_video iframe{width: calc(100vw - 30px);height: calc((100vw - 30px) * 9 / 16)}
+    
 
+    .ticket_btn .btn{width: 48%;}
+    .ticket_btn .btn a{width: 100%;}
+    
 
 }
 
@@ -197,6 +203,10 @@
     .box_modal_body{}
     .box_modal_foot .btn a{width: 260px}
     .box_modal .btn_close{top: 10px;right: 10px;width: 15px}
+    
+    .ticket_btn .btn{width: 48%;}
+    .ticket_btn .btn a{width: 100%;}
+
 
     /* CONFIRM TEL */
     .confirm_tel select{width: 70px}
