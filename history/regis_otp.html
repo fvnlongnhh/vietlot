@@ -15,24 +15,32 @@
 <script src="../js/jquery.js"></script>
 </head>
 
-<body id="login" class="game_pages bg2">
+<body id="register" class="game_pages bg2 bg2u">
     <div id="wrapper">
         <div id="header">
-            <h1 id="logo">Xác thực số điện thoại</h1>
+            <div class="container">
+                <h1 id="logo">Xác thực số điện thoại</h1>
+                <p><a href="./register_info.html"><img src="../images/ic_prev.png" width="10" alt="Back"></a></p>
+            </div>
         </div>
         <!-- main start -->
         <div id="main" class="clearfix">
             <div class="container">
                 <div class="main_ct">
-                    <div class="login_ct">
-                        <p class="center"><a href="../games/"><img src="../images/logo.png" width="150" alt="Lucky Best"></a></p>
+                    <div class="regis_ct">
+                        <ul class="step">
+                            <li></li>
+                            <li></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
                         <p>Nhập mã OTP</p>
-                        <p><input type="num" max="10"></p>
+                        <p><input type="num"></p>
                     </div>
 
                     <div class="control_ct">
-                        <p class="btn btn_yel"><a href="./password.html">Xác nhận</a></p>
-                        <p class="center"><a class="btn_modal">Gửi lại OTP <span>30 giây</span></a></p>
+                        <p class="btn btn_disable"><a href="./regis_password.html">Hoàn tất</a></p>
+                        <p class="btn btn_disable active"><a href="./regis_password.html">Hoàn tất</a></p>
                     </div>
                 </div>
             </div>
