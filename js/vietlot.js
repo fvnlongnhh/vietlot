@@ -55,7 +55,7 @@ $(document).ready(function() {
     });
 
 
-    $('.games_item, .guide_item, .payment_item').on('click', function() {
+    $('.games_item, .guide_item, #payment .payment_item').on('click', function() {
         var href = $(this).find('a').attr('href');
         location.href = href;
     });
@@ -110,6 +110,30 @@ $(document).ready(function() {
         $(this).parent().find('span').removeClass('active');
         $(this).toggleClass('active');
     });
+
+    if( $('.result_content').length) {
+        $('.rate_tab li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('.rate_tab li').removeClass('active');
+            $('.rate_tab_ct').removeClass('active');
+
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        });
+    }
+
+    if( $('.result_content').length) {
+        $('.result_tab li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('.result_tab li').removeClass('active');
+            $('.result_tab_ct').removeClass('active');
+
+            $(this).addClass('active');
+            $("#"+tab_id).addClass('active');
+        });
+    }
 
     
 });
